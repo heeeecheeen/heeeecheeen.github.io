@@ -28,8 +28,6 @@ body {
     left: calc(50vw - 100px);
 }
 
-
-
 section {
     padding-top: 200px;
     padding-left: 60px;
@@ -49,6 +47,9 @@ section {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
 
+#September1 tr:nth-child(even) {
+    background-color: #999999;
+}
 
 #September {
     border-collapse: collapse;
@@ -59,7 +60,6 @@ section {
     min-width: 12vw;
     height: 10vh;
     text-align: center;
-    font-size: 110%;
     background-color: rgba(255, 255, 255, 30%);
   }
 
@@ -75,4 +75,22 @@ section {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.todo1wrapper {
+    display: grid;
+    grid-template-columns: 120px 30px;
+    position: absolute;
+    top: calc(25vh - 100px);
+    left: calc(30vw - 100px);
+  }
 
+.todo1wrapper div {
+    height: 30px;
+    border: 1px solid #000000;
+    background-color: white;
+    text-align:center;
+    font-size: 120%
+  }
+  
+.todo1doublewide {
+    grid-column: 2 / span 2;
+  }
