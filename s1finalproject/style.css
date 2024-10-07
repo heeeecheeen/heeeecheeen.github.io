@@ -32,7 +32,7 @@ body {
 
 section {
     padding-top: 200px;
-    padding-left: 60px;
+    padding-left: calc(12vw - 100px);
 }
 
 #September1 {
@@ -49,6 +49,9 @@ section {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
 
+  #September1 td:nth-child(7n), #September1 td:nth-child(7n - 6){
+    background-color: rgba(232, 188, 217);
+  }
 
 #September {
     border-collapse: collapse;
@@ -57,14 +60,16 @@ section {
 #September td {
     border: 2px solid white;
     min-width: 12vw;
-    height: 10vh;
+    height: 12vh;
     text-align: center;
     font-size: 110%;
     background-color: rgba(255, 255, 255, 30%);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
   }
 
   #September td:nth-child(7n), #September td:nth-child(7n - 6){
-    background-color: red;
+    background-color: rgba(237, 178, 217);
   }
 
   
@@ -79,3 +84,98 @@ section {
 }
 
 
+
+#dressercontents {
+  background-image: url("zzz.png");
+  min-width: 12vw;
+  height: 12vh;
+  background-size: cover;
+  position: relative;
+
+}
+
+#dressercontents:hover {
+  animation: flashingdresser 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes flashingdresser {
+  0% {background-image: url("Tootired1.png");}
+  19.9999% {background-image: url("Tootired1.png");}
+  20% {background-image: url("Tootired1.png");}
+  20% {background-image: url("zzz.png")}
+  40% {background-image: url("Tootired1.png");}
+  60% {background-image: url("zzz.png");}
+}
+
+
+#dressercontents1 {
+  background-image: url("zzz.png");
+  min-width: 12vw;
+  height: 12vh;
+  background-size: cover;
+  position: relative;
+
+}
+
+#dressercontents1:hover {
+  animation: flashingdressera 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes flashingdressera {
+  0% {background-image: url("Skip.png");}
+  19.9999% {background-image: url("Skip.png");}
+  20% {background-image: url("Skip.png");}
+  20% {background-image: url("zzz.png")}
+  40% {background-image: url("Skip.png");}
+  60% {background-image: url("zzz.png");}
+}
+
+
+#dressercontents2 {
+  background-image: url("zzz.png");
+  min-width: 12vw;
+  height: 12vh;
+  background-size: cover;
+  position: relative;
+
+}
+
+#dressercontents2:hover {
+  animation: flashingdresserb 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes flashingdresserb {
+  0% {background-image: url("Skip2.png");}
+  19.9999% {background-image: url("Skip2.png");}
+  20% {background-image: url("Skip2.png");}
+  20% {background-image: url("zzz.png")}
+  40% {background-image: url("Skip2.png");}
+  60% {background-image: url("zzz.png");}
+}
+
+
+#dressercontents3 {
+  background-image: url("beaplanner.png");
+  min-width: 12vw;
+  height: 12vh;
+  background-size: cover;
+  position: relative;
+
+}
+
+#dressercontents3:hover {
+  animation: flashingdresserc 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes flashingdresserc {
+  0% {background-image: url("mustworkhard.png");}
+  19.9999% {background-image: url("mustworkhard.png");}
+  20% {background-image: url("mustworkhard.png");}
+  20% {background-image: url("beaplanner.png");}
+  40% {background-image: url("mustworkhard.png");}
+  60% {background-image: url("beaplanner.png");}
+}

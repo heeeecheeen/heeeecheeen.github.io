@@ -87,8 +87,8 @@ section {
     display: grid;
     grid-template-columns: 200px 40px;
     position: absolute;
-    top: calc(25vh - 100px);
-    left: calc(30vw - 100px);
+    top: calc(35vh - 100px);
+    left: calc(55vw - 100px);
   }
 
 .todo1wrapper div {

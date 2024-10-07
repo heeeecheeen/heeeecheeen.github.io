@@ -85,10 +85,10 @@ section {
 
 .todo1wrapper {
     display: grid;
-    grid-template-columns: 200px 40px;
+    grid-template-columns: 150px 40px;
     position: absolute;
-    top: calc(25vh - 100px);
-    left: calc(30vw - 100px);
+    top: calc(55vh - 100px);
+    left: calc(70vw - 100px);
   }
 
 .todo1wrapper div {
