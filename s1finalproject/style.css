@@ -179,3 +179,18 @@ section {
   40% {background-image: url("mustworkhard.png");}
   60% {background-image: url("beaplanner.png");}
 }
+
+#nextpage {
+  position: absolute;
+  left: calc(50vw - 100px);
+  top: calc(96vh - 100px);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2vw;
+}
+
+#webring-image {
+  position: absolute;
+  left: calc(55vw - 100px);
+  top: calc(97vw - 100px);
+  width: 10vw
+}
