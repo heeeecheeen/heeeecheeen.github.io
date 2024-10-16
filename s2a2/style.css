@@ -6,10 +6,49 @@ html, body {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  background-color:black;
 }
 
-#sketchPhoto1{
-  width: 20vw;
-  height: 15vh;
+#restart {
+  position: absolute;
+  top: 10vh;
+  left: 8vh;
+  font-size: 3vh;
+  color: gray;
 }
+
+#start {
+  width: 20vw;
+  height: 20vh;
+  position: absolute;
+  top: 40vh;
+  left: 40vw;
+}
+
+#sketchPhoto1{width: 20vw;height: 20vh;position: absolute}
+#sketchPhoto2{width: 20vw;height: 20vh;position: absolute}
+#sketchPhoto3{width: 20vw;height: 20vh;position: absolute}
+#sketchPhoto4{width: 20vw;height: 20vh;position: absolute}
+#sketchPhoto5{width: 20vw;height: 20vh;position: absolute}
+#sketchPhoto6{width: 20vw;height: 20vh;position: absolute}
+
+.sketches {
+  position: absolute;
+  top: 40vh;
+  left: 40vw;
+  float: left;
+  transition: 2s;
+}
+
+#mess:target > #sketch1 {
+  transform: translate(-20vw, -25vh);
+}
+
+#mess:target > #sketch2 {
+  transform: translate(-20vw, 0vh);
+}
+
+#mess:target > #sketch3 {
+  transform: translate(-20vw, 25vh);
+}
+
+
