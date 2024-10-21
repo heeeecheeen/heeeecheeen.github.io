@@ -6,6 +6,8 @@ html, body {
   position: absolute;
   width: 100vw;
   height: 100vh;
+  /* background-color: red; */
+  /* pointer-events: none; */
 }
 
 #restart {
@@ -51,4 +53,23 @@ html, body {
   transform: translate(-20vw, 25vh);
 }
 
+#checkbox1:checked ~ #wrapper {
+  background-color: black;
+}
 
+#sketch1popup {
+  pointer-events: none;
+  transition: 2s;
+  opacity: 0;
+  background-color: red;
+  width: 100vw;
+  height: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#sketch1popup:target {
+  pointer-events: all;
+  opacity: 1;
+}
