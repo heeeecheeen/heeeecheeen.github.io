@@ -12,9 +12,9 @@ html, body {
 
 #restart {
   position: absolute;
-  top: 10vh;
-  left: 8vh;
-  font-size: 3vh;
+  top: calc(50vw - 12.5vh);
+  left: calc(54vw - 12.5vh);
+  font-size: 2.5vh;
   color: gray;
 }
 
@@ -26,50 +26,121 @@ html, body {
   left: 40vw;
 }
 
-#sketchPhoto1{width: 20vw;height: 20vh;position: absolute}
-#sketchPhoto2{width: 20vw;height: 20vh;position: absolute}
-#sketchPhoto3{width: 20vw;height: 20vh;position: absolute}
-#sketchPhoto4{width: 20vw;height: 20vh;position: absolute}
-#sketchPhoto5{width: 20vw;height: 20vh;position: absolute}
-#sketchPhoto6{width: 20vw;height: 20vh;position: absolute}
+#sketchPhoto1{width: 12vw;height: 20vh;position: absolute}
+#sketchPhoto2{width: 12vw;height: 20vh;position: absolute}
+#sketchPhoto3{width: 12vw;height: 20vh;position: absolute}
+#sketchPhoto4{width: 12vw;height: 20vh;position: absolute}
+#sketchPhoto5{width: 12vw;height: 20vh;position: absolute}
+#sketchPhoto6{width: 12vw;height: 20vh;position: absolute}
 
 .sketches {
   position: absolute;
   top: 40vh;
-  left: 40vw;
+  left: calc(50vw - 12.5vh);
   float: left;
   transition: 2s;
 }
 
 #mess:target > #sketch1 {
-  transform: translate(-20vw, -25vh);
+  transform: translate(-16vw, -25vh);
 }
 
 #mess:target > #sketch2 {
-  transform: translate(-20vw, 0vh);
+  transform: translate(-16vw, 0vh);
 }
 
 #mess:target > #sketch3 {
-  transform: translate(-20vw, 25vh);
+  transform: translate(-16vw, 25vh);
 }
+
+
+#mess:target > #sketch4 {
+  transform: translate(16vw, -25vh);
+}
+
+#mess:target > #sketch5 {
+  transform: translate(16vw, 0vh);
+}
+
+#mess:target > #sketch6 {
+  transform: translate(16vw, 25vh);
+}
+
+
+
 
 #checkbox1:checked ~ #wrapper {
   background-color: black;
-}
-
-#sketch1popup {
-  pointer-events: none;
-  transition: 2s;
-  opacity: 0;
-  background-color: red;
-  width: 100vw;
-  height: 100vw;
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: absolute;
 }
 
 #sketch1popup:target {
   pointer-events: all;
   opacity: 1;
+}
+
+#mode {
+  position: absolute;
+  left: calc(12vw - 12.5vh);
+  top: calc(11vw - 12.5vh);
+  color: gray;
+  z-index: 10;
+}
+
+#checkbox1 {
+  position: absolute;
+  top: calc(11vw - 12.5vh);  
+  left: calc(10vw - 12.5vh); 
+  z-index: 10;
+}
+
+
+#wrapper2 {
+  color: rgba(204, 235, 202);
+  font-weight: bold;
+  -webkit-text-stroke-width: .01vw;
+  -webkit-text-stroke-color: gray;
+  letter-spacing: .5vw;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  font-size: 5vw;
+}
+
+#marquee1 {
+  width: 10000vw;
+  position: relative;
+  animation: lefttextscroll infinite 60s linear;
+}
+#marquee2 {
+  width: 10000vw;
+  position: relative;
+  animation: righttextscroll infinite 60s linear;
+}
+
+#marquee1:hover, #marquee2:hover {
+  animation-play-state: paused;
+  color: gray;
+}
+
+@keyframes lefttextscroll {
+  from{left: 0vw;}
+  to{left: -434.5vw}
+}
+@keyframes righttextscroll {
+  from{left: -434.5vw;}
+  to{left: 0;}
+}
+
+#popup1{width: 30vw;height: 60vh;position: absolute}
+
+#sketch1popup {
+  pointer-events: none;
+  transition: 2s;
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 25vh;
+  left: 26vw;
 }
