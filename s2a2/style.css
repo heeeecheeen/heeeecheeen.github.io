@@ -11,16 +11,6 @@ html, body {
   height: 100vh;
 }
 
-#mode {
-    position: relative;
-    left: 8vw;
-    top: 5vh;
-    color: gray;
-    z-index: 10;
-    font-family: Cascadia Code;
-    font-size: calc(30px - .5vw);
-}
-
 
 #checkbox1 {
   position: relative;
@@ -353,11 +343,30 @@ html, body {
 }
 
 
-
 @media only screen and (max-width: 1000px) {
-  #mode {
-    margin-left: calc(12vw - 12.5vh);
-    margin-top: calc(11vw - 12.5vh);
-    font-size: 2vh;
+  #center {
+    margin-left: -2vw;
+    margin-top: 0vw;
+    width: 100vw;
+    height: 100vh;
   }
+}
+
+
+@media (min-width: 601px) and (max-width: 999px) {
+    #center {
+    margin-left: -2vw;
+    margin-top: 5vw;
+    width: 100vw;
+    height: 100vh;
+    }
+}
+
+@media (max-width: 600px) {
+    #center {
+    margin-left: -2vw;
+    margin-top: 8vw;
+    width: 100vw;
+    height: 100vh;
+    }
 }
