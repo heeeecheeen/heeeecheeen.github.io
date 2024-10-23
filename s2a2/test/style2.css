@@ -1,0 +1,363 @@
+
+
+html, body {
+  margin: 0;
+}
+
+
+#center {
+  padding: 10px;
+  width: 100vw;
+  height: 100vh;
+}
+
+#mode {
+    position: relative;
+    left: 8vw;
+    top: 5vh;
+    color: gray;
+    z-index: 10;
+    font-family: Cascadia Code;
+    font-size: calc(30px - .5vw);
+}
+
+
+#checkbox1 {
+  position: relative;
+  z-index: 10;
+}
+
+#restart {
+  position: relative;
+  left: calc(50vw - 10vh);
+  top: 78vh;
+  font-size: 2.5vh;
+  color: gray;
+  font-family: Cascadia Code;
+}
+
+#start {
+  position: relative;
+  width: 20vw;
+  height: 30vh;
+  left: calc(50vw - 10vw - 10px);
+  top: 30vh;
+  z-index: 10;
+}
+
+
+#sketchPhoto1{width: 12vw;height: auto;position: relative}
+#sketchPhoto2{width: 12vw;height: auto;position: relative}
+#sketchPhoto3{width: 12vw;height: auto;position: relative}
+#sketchPhoto4{width: 12vw;height: auto;position: relative}
+#sketchPhoto5{width: 12vw;height: auto;position: relative}
+#sketchPhoto6{width: 12vw;height: auto;position: relative}
+
+.sketches {
+  position: absolute;
+  top: 40vh;
+  left: calc(50vw - 6vw - 10px);
+  float: left;
+  transition: 2s;
+}
+
+#mess:target > #sketch1 {
+  transform: translate(-16vw, -25vh);
+}
+
+#mess:target > #sketch2 {
+  transform: translate(-16vw, 0vh);
+}
+
+#mess:target > #sketch3 {
+  transform: translate(-16vw, 25vh);
+}
+
+
+#mess:target > #sketch4 {
+  transform: translate(16vw, -25vh);
+}
+
+#mess:target > #sketch5 {
+  transform: translate(16vw, 0vh);
+}
+
+#mess:target > #sketch6 {
+  transform: translate(16vw, 25vh);
+}
+
+
+#popup1{
+    width: 30vw;
+    height: auto; 
+    position: relative;
+    left: calc(50vw - 15vw);
+    top: 25vh;
+}
+
+#sketch1popup:target {
+  pointer-events: all;
+  opacity: 1;
+}
+
+#sketch1popup {
+  pointer-events: none;
+  transition: 2s;
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+
+#description1 {
+    margin: 0px;    
+    line-height: 50%;
+    position: absolute;
+    z-index: 10;
+    background-color: white;
+    left: calc(50vw - 15vw);
+    font-family: Cascadia Code;
+    font-size: 1.5vh;
+    top: 10vh;
+}
+
+#popup2{
+    width: 30vw;
+    height: auto; 
+    position: relative;
+    left: calc(50vw - 15vw);
+    top: 25vh;
+}
+
+#sketch2popup:target {
+  pointer-events: all;
+  opacity: 1;
+}
+
+#sketch2popup {
+  pointer-events: none;
+  transition: 2s;
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+
+#description2 {
+    margin: 0px;    
+    line-height: 50%;
+    position: absolute;
+    z-index: 10;
+    background-color: white;
+    left: calc(50vw - 15vw);
+    font-family: Cascadia Code;
+    font-size: 1.5vh;
+    top: 10vh;
+}
+
+#popup3{
+    width: 30vw;
+    height: auto; 
+    position: relative;
+    left: calc(50vw - 15vw);
+    top: 25vh;
+}
+
+#sketch3popup:target {
+  pointer-events: all;
+  opacity: 1;
+}
+
+#sketch3popup {
+  pointer-events: none;
+  transition: 2s;
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+
+#description3 {
+    margin: 0px;    
+    line-height: 50%;
+    position: absolute;
+    z-index: 10;
+    background-color: white;
+    left: calc(50vw - 15vw);
+    font-family: Cascadia Code;
+    font-size: 1.5vh;
+    top: 10vh;
+}
+
+#popup4{
+    width: 30vw;
+    height: auto; 
+    position: relative;
+    left: calc(50vw - 15vw);
+    top: 25vh;
+}
+
+#sketch4popup:target {
+  pointer-events: all;
+  opacity: 1;
+}
+
+#sketch4popup {
+  pointer-events: none;
+  transition: 2s;
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+
+#description4 {
+    margin: 0px;    
+    line-height: 50%;
+    position: absolute;
+    z-index: 10;
+    background-color: white;
+    left: calc(50vw - 15vw);
+    font-family: Cascadia Code;
+    font-size: 1.5vh;
+    top: 10vh;
+}
+
+#popup5{
+    width: 30vw;
+    height: auto; 
+    position: relative;
+    left: calc(50vw - 15vw);
+    top: 25vh;
+}
+
+#sketch5popup:target {
+  pointer-events: all;
+  opacity: 1;
+}
+
+#sketch5popup {
+  pointer-events: none;
+  transition: 2s;
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+
+#description5 {
+    margin: 0px;    
+    line-height: 50%;
+    position: absolute;
+    z-index: 10;
+    background-color: white;
+    left: calc(50vw - 15vw);
+    font-family: Cascadia Code;
+    font-size: 1.5vh;
+    top: 10vh;
+}
+
+#popup6{
+    width: 30vw;
+    height: auto; 
+    position: relative;
+    left: calc(50vw - 15vw);
+    top: 25vh;
+}
+
+#sketch6popup:target {
+  pointer-events: all;
+  opacity: 1;
+}
+
+#sketch6popup {
+  pointer-events: none;
+  transition: 2s;
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+
+#description6 {
+    margin: 0px;    
+    line-height: 50%;
+    position: absolute;
+    z-index: 10;
+    background-color: white;
+    left: calc(50vw - 15vw);
+    font-family: Cascadia Code;
+    font-size: 1.5vh;
+    top: 10vh;
+}
+
+
+#wrapper2 {
+  color: rgba(204, 235, 202);
+  font-weight: bold;
+  -webkit-text-stroke-width: .01vw;
+  -webkit-text-stroke-color: gray;
+  letter-spacing: .5vw;
+  width: 100vw;
+  length: 100vh;
+  overflow: hidden;
+  position: absolute;
+  left: 30vw;
+  font-size: 5vw;
+  font-family: Cascadia Code;
+   transform: rotate(90deg);
+   z-index: 11;
+}
+
+#wrapper3 {
+  color: rgba(204, 235, 202);
+  font-weight: bold;
+  -webkit-text-stroke-width: .01vw;
+  -webkit-text-stroke-color: gray;
+  letter-spacing: .5vw;
+  width: 100vw;
+  length: 100vh;
+  overflow: hidden;
+  position: absolute;
+  left: -30vw;
+  font-size: 5vw;
+  font-family: Cascadia Code;
+   transform: rotate(90deg);
+   z-index: 11;
+}
+
+
+#marquee1 {
+  width: 1000vw;
+  position: relative;
+  animation: lefttextscroll infinite 60s linear;
+}
+#marquee2 {
+  width: 1000vw;
+  position: relative;
+  animation: righttextscroll infinite 60s linear;
+}
+
+#marquee1:hover, #marquee2:hover {
+  animation-play-state: paused;
+  color: gray;
+}
+
+@keyframes lefttextscroll {
+  from{left: 0vw;}
+  to{left: -434.5vw}
+}
+@keyframes righttextscroll {
+  from{left: -434.5vw;}
+  to{left: 0;}
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+  #mode {
+    margin-left: calc(12vw - 12.5vh);
+    margin-top: calc(11vw - 12.5vh);
+    font-size: 2vh;
+  }
+}

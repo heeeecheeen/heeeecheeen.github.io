@@ -11,9 +11,10 @@ html, body {
 }
 
 #restart {
-  position: absolute;
-  top: 75vh;
-  left: calc(53vw - 12.5vh);
+  position: relative;
+  padding-top: 50px;
+  margin-top: 20px;
+  margin-left: 20px;
   font-size: 2.5vh;
   color: gray;
   font-family: Cascadia Code;
@@ -319,18 +320,35 @@ html, body {
 }
 
 
-#center {
- position: absolute;
-  width: 100vw;
-  height: 100vh;
 
+#center {
+  padding: 10px;
+  width: 40vw;
+  height: 100vh;
+  margin-left: 30vw;
+  margin-top: 15vh;
+  background-color: blue;
+  font-size: calc(40px - .5vw);
 }
 
-@media only screen and (max-width: 1000px) {
-  #center {
-    margin-left: 0vw;
-    margin-top: 0vw;
-    width: 100vw;
-    height: 100vh;
-  }
+
+@media (min-width: 1024px) {
+    #center {
+        width: 80%;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    #center {
+        width: 90%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    #center {
+        width: 100%;
+        padding: 10px;
+    }
 }
