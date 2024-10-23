@@ -12,10 +12,11 @@ html, body {
 
 #restart {
   position: absolute;
-  top: calc(50vw - 12.5vh);
-  left: calc(54vw - 12.5vh);
+  top: 75vh;
+  left: calc(53vw - 12.5vh);
   font-size: 2.5vh;
   color: gray;
+  font-family: Cascadia Code;
 }
 
 #start {
@@ -24,14 +25,15 @@ html, body {
   position: absolute;
   top: 40vh;
   left: 40vw;
+  z-index: 10;
 }
 
-#sketchPhoto1{width: 12vw;height: 20vh;position: absolute}
-#sketchPhoto2{width: 12vw;height: 20vh;position: absolute}
-#sketchPhoto3{width: 12vw;height: 20vh;position: absolute}
-#sketchPhoto4{width: 12vw;height: 20vh;position: absolute}
-#sketchPhoto5{width: 12vw;height: 20vh;position: absolute}
-#sketchPhoto6{width: 12vw;height: 20vh;position: absolute}
+#sketchPhoto1{width: 12vw;height: auto;position: absolute}
+#sketchPhoto2{width: 12vw;height: auto;position: absolute}
+#sketchPhoto3{width: 12vw;height: auto;position: absolute}
+#sketchPhoto4{width: 12vw;height: auto;position: absolute}
+#sketchPhoto5{width: 12vw;height: auto;position: absolute}
+#sketchPhoto6{width: 12vw;height: auto;position: absolute}
 
 .sketches {
   position: absolute;
@@ -74,17 +76,14 @@ html, body {
   position: absolute;
 }
 
-#sketch1popup:target {
-  pointer-events: all;
-  opacity: 1;
-}
-
 #mode {
   position: absolute;
   left: calc(12vw - 12.5vh);
   top: calc(11vw - 12.5vh);
   color: gray;
   z-index: 10;
+  font-family: Cascadia Code;
+  font-size: 2vh;
 }
 
 #checkbox1 {
@@ -102,9 +101,13 @@ html, body {
   -webkit-text-stroke-color: gray;
   letter-spacing: .5vw;
   width: 100vw;
+  length: 100vh;
   overflow: hidden;
   position: relative;
   font-size: 5vw;
+  font-family: Cascadia Code;
+   transform: rotate(90deg);
+   z-index:-1;
 }
 
 #marquee1 {
@@ -132,7 +135,12 @@ html, body {
   to{left: 0;}
 }
 
-#popup1{width: 30vw;height: 60vh;position: absolute}
+#popup1{width: 30vw;height: auto;position: absolute}
+
+#sketch1popup:target {
+  pointer-events: all;
+  opacity: 1;
+}
 
 #sketch1popup {
   pointer-events: none;
@@ -143,4 +151,186 @@ html, body {
   position: fixed;
   top: 25vh;
   left: 26vw;
+}
+
+#description1 {
+    margin: 0px;    
+    line-height: 50%;
+    position: fixed;
+    z-index: 10;
+    background-color: white;
+    top: 65vh;
+    left: 58vw;
+    font-family: Cascadia Code;
+    font-size: 2vh;
+}
+
+
+#popup2{width: 30vw;height: auto;position: absolute}
+
+#sketch2popup:target {
+  pointer-events: all;
+  opacity: 1;
+}
+
+#sketch2popup {
+  pointer-events: none;
+  transition: 2s;
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 25vh;
+  left: 26vw;
+}
+
+#description2 {
+    margin: 0px;    
+    line-height: 50%;
+    position: fixed;
+    z-index: 10;
+    background-color: white;
+    top: 65vh;
+    left: 58vw;
+    font-family: Cascadia Code;
+    font-size: 2vh;
+}
+
+#popup3{width: 30vw;height: auto;position: absolute}
+
+#sketch3popup:target {
+  pointer-events: all;
+  opacity: 1;
+}
+
+#sketch3popup {
+  pointer-events: none;
+  transition: 2s;
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 25vh;
+  left: 26vw;
+}
+
+#description3 {
+    margin: 0px;    
+    line-height: 50%;
+    position: fixed;
+    z-index: 10;
+    background-color: white;
+    top: 65vh;
+    left: 58vw;
+    font-family: Cascadia Code;
+    font-size: 2vh;
+}
+
+
+#popup4{width: 30vw;height: auto;position: absolute}
+
+#sketch4popup:target {
+  pointer-events: all;
+  opacity: 1;
+}
+
+#sketch4popup {
+  pointer-events: none;
+  transition: 2s;
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 25vh;
+  left: 26vw;
+}
+
+#description4 {
+    margin: 0px;    
+    line-height: 50%;
+    position: fixed;
+    z-index: 10;
+    background-color: white;
+    top: 65vh;
+    left: 58vw;
+    font-family: Cascadia Code;
+    font-size: 2vh;
+}
+
+
+#popup5{width: 30vw;height: auto;position: absolute}
+
+#sketch5popup:target {
+  pointer-events: all;
+  opacity: 1;
+}
+
+#sketch5popup {
+  pointer-events: none;
+  transition: 2s;
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 25vh;
+  left: 26vw;
+}
+
+#description5 {
+    margin: 0px;    
+    line-height: 50%;
+    position: fixed;
+    z-index: 10;
+    background-color: white;
+    top: 65vh;
+    left: 58vw;
+    font-family: Cascadia Code;
+    font-size: 2vh;
+}
+
+#popup6{width: 30vw;height: auto;position: absolute}
+
+#sketch6popup:target {
+  pointer-events: all;
+  opacity: 1;
+}
+
+#sketch6popup {
+  pointer-events: none;
+  transition: 2s;
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 25vh;
+  left: 26vw;
+}
+
+#description6 {
+    margin: 0px;    
+    line-height: 50%;
+    position: fixed;
+    z-index: 10;
+    background-color: white;
+    top: 65vh;
+    left: 58vw;
+    font-family: Cascadia Code;
+    font-size: 2vh;
+}
+
+
+#center {
+ position: absolute;
+  width: 100vw;
+  height: 100vh;
+
+}
+
+@media only screen and (max-width: 1000px) {
+  #center {
+    margin-left: 0vw;
+    margin-top: 0vw;
+    width: 100vw;
+    height: 100vh;
+  }
 }
